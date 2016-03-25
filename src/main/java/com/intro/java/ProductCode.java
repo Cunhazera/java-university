@@ -1,16 +1,21 @@
-package com.intro.java;
-
 import java.util.Scanner;
 
 public class ProductCode {
 
-	public static void main(String args[]) {
+	public static void main(String args[]) throws Exception {
 		Scanner scanner = new Scanner(System.in);
 		String price = getInfoFromUser(scanner, "Tell the product price: ");
 		String code = getInfoFromUser(scanner, "Tell the code: ");
 
-		double priceDouble = Double.parseDouble(price);
-		int codeInt = Integer.parseInt(code);
+		double priceDouble = 0;
+		int codeInt = 0;
+
+		try {
+			priceDouble = Double.parseDouble(price);
+			codeInt = Integer.parseInt(code);
+		} catch (Exception e) {
+			System.out.println("Some problens ocurred while parsing the numbers: " + e.getMessage());
+		}
 
 		switch (codeInt) {
 		case 1:

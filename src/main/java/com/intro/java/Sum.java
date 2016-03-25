@@ -1,5 +1,3 @@
-package com.intro.java;
-
 public class Sum {
 
 	public static void main(String[] args) {
