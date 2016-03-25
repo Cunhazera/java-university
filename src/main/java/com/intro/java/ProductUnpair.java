@@ -1,3 +1,5 @@
+package com.intro.java;
+
 public class ProductUnpair {
 
 	public static void main(String[] args) {

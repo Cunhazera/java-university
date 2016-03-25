@@ -1,3 +1,5 @@
+package com.intro.java;
+
 import java.util.Scanner;
 
 public class ProductCode {
